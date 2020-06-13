@@ -20,10 +20,12 @@ export default class Counter extends Component {
   }
 
   render(props, state) {
-    return jsx`<div>
-      <span>${state.counter}</span>
-      <input onClick="${this.increment}" type="button" value="+"/>
-      <input onClick="${this.reset}" type="button" value="Clear"/>
+    return jsx`<div class="-counter">
+      <div class="count">${state.counter}</div>
+      <div class="controls common">
+        <input class="increment" onClick="${this.increment}" type="button" value="+"/>
+        <input class="reset" onClick="${this.reset}" type="button" value="Clear"/>
+      </div>
     </div>`
   }
 }

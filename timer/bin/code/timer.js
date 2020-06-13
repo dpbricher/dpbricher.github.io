@@ -49,10 +49,12 @@ export default class Timer extends Component {
     const seconds = pad2(time.getSeconds())
     const ms = pad2((time.getMilliseconds() / 10) | 0)
 
-    return jsx`<div>
-      <span>${minutes}:${seconds}:${ms}</span>
-      <input onClick=${this.start} type="button" value="Start"/>
-      <input onClick=${this.stop} type="button" value="Stop"/>
+    return jsx`<div class="-timer">
+      <div class="time">${minutes}:${seconds}:${ms}</div>
+      <div class="controls common">
+        <input class="start" onClick=${this.start} type="button" value="Start"/>
+        <input class="stop" onClick=${this.stop} type="button" value="Stop"/>
+      </div>
     </div>`
   }
 }

@@ -1,3 +1,31 @@
 body {
   background-color: #add8e6;
 }
+.common.controls {
+  display: flex;
+  justify-content: space-around;
+}
+.common.controls input[type="button"] {
+  margin: 2px;
+}
+.app-root {
+  margin: 0 auto;
+  max-width: 200px;
+}
+.app-root .-timer {
+  margin-bottom: 10px;
+}
+.app-root .-counter,
+.app-root .-timer {
+  font-size: 2rem;
+}
+.-counter .count {
+  text-align: center;
+}
+.-counter .controls {
+  display: flex;
+  justify-content: space-around;
+}
+.-timer .time {
+  text-align: center;
+}

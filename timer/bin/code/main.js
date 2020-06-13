@@ -8,4 +8,4 @@ const app = jsx`<div>
   <${Timer}/>
   <${Counter}/>
 </div>`
-render(app, document.body);
+render(app, document.querySelector('.app-root'))
